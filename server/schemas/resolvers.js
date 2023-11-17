@@ -14,4 +14,9 @@ const resolvers = {
     },
 }
 
+//Find for async for users : return await
+users: async () => {
+  return await User.find().select().populate();
+}
+
 module.exports = resolvers;
